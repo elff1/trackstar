@@ -48,7 +48,11 @@ return array(
 		),
 		*/
 		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+			'connectionString' => 'mysql:host=localhost;dbname=trackstar_dev',
+			'emulatePrepare' => true,
+			'username' => 'root',
+			'password' => '123456',
+			'charset' => 'utf8',
 		),
 		// uncomment the following to use a MySQL database
 		/*
