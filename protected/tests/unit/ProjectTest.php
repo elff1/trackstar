@@ -1,5 +1,9 @@
 <?php
 class ProjectTest extends CDbTestCase {
+	public $fixtures = array(
+		'projects' => 'Project',
+		);
+	
 	public function testCRUD() {
 		// Create a new project
 		$newProject = new Project;
