@@ -124,4 +124,11 @@ class Issue extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	/**
+	* @returen array issue type names indexed by type IDs
+	*/
+	public function getTypeOptions() {
+		return array();
+	}
 }
